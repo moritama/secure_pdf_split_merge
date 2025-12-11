@@ -1,6 +1,6 @@
 export const ja = {
     app: {
-        title: 'Local PDF Tool',
+        title: 'Secure PDF Split & Merge',
     },
     nav: {
         split: '分割 (Split)',

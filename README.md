@@ -1,4 +1,4 @@
-# Local PDF Tool
+# Secure PDF Split & Merge
 
 A secure, client-side PDF manipulation tool for splitting and merging PDF files offline.
 オフラインでPDFファイルの分割・結合を行うことができる、安全なクライアントサイドツールです。
