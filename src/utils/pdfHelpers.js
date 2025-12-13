@@ -33,6 +33,7 @@ export const downloadPdf = (pdfBytes, filename = 'merged.pdf') => {
     const link = document.createElement('a');
     link.href = URL.createObjectURL(blob);
     link.download = filename;
+    link.target = '_blank';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

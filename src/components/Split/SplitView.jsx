@@ -159,7 +159,7 @@ const SplitView = () => {
                                 style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', opacity: selectedPages.length === 0 ? 0.5 : 1 }}
                             >
                                 {isProcessing ? <Loader2 className="animate-spin" size={18} /> : <Download size={18} />}
-                                選択ページを抽出
+                                {t('split.extract_selected')}
                             </button>
                         </div>
                     )}
