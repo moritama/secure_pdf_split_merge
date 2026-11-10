@@ -13,24 +13,52 @@ const Header = ({ activeTab, onTabChange }) => {
             justifyContent: 'space-between',
             position: 'sticky',
             top: '1rem',
-            zIndex: 100
+            zIndex: 100,
+            // 透過しない薄い赤の下地を設定
+            backgroundColor: '#fee2e2',
+            border: '1px solid #fca5a5',
+            borderRadius: '12px',
+            boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)',
+            color: '#1e293b'
         }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
                 <div style={{
                     width: '32px',
                     height: '32px',
-                    background: 'var(--accent-primary)',
+                    background: '#ef4444',
+                    color: '#ffffff',
                     borderRadius: '8px',
                     display: 'grid',
                     placeItems: 'center',
-                    fontWeight: 'bold'
+                    fontWeight: 'bold',
+                    fontSize: '0.8rem'
                 }}>
                     PDF
                 </div>
-                <h1 style={{ fontSize: '1.25rem', fontWeight: 700, margin: 0 }}>{t('app.title')}</h1>
+                <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.5rem' }}>
+                    <h1 style={{ fontSize: '1.25rem', fontWeight: 700, margin: 0, color: '#1e293b' }}>{t('app.title')}</h1>
+                    {/* 拡張機能のバージョン表記バッジ */}
+                    <span style={{
+                        fontSize: '0.75rem',
+                        fontWeight: 700,
+                        padding: '0.1rem 0.5rem',
+                        borderRadius: '999px',
+                        background: '#ffffff',
+                        color: '#dc2626',
+                        border: '1px solid #fca5a5'
+                    }}>
+                        {t('app.version')}
+                    </span>
+                </div>
             </div>
 
-            <nav style={{ display: 'flex', gap: '0.5rem', background: 'var(--bg-secondary)', padding: '0.25rem', borderRadius: '8px' }}>
+            <nav style={{
+                display: 'flex',
+                gap: '0.5rem',
+                background: '#fecaca',
+                padding: '0.25rem',
+                borderRadius: '8px'
+            }}>
                 <button
                     onClick={() => onTabChange('split')}
                     style={{
@@ -39,9 +67,10 @@ const Header = ({ activeTab, onTabChange }) => {
                         gap: '0.5rem',
                         padding: '0.5rem 1rem',
                         borderRadius: '6px',
-                        background: activeTab === 'split' ? 'var(--bg-primary)' : 'transparent',
-                        color: activeTab === 'split' ? 'var(--accent-primary)' : 'var(--text-secondary)',
-                        fontWeight: activeTab === 'split' ? 600 : 400
+                        background: activeTab === 'split' ? '#ffffff' : 'transparent',
+                        color: activeTab === 'split' ? '#dc2626' : '#475569',
+                        fontWeight: activeTab === 'split' ? 700 : 500,
+                        boxShadow: activeTab === 'split' ? '0 1px 3px rgba(0, 0, 0, 0.1)' : 'none'
                     }}
                 >
                     <Scissors size={18} />
@@ -55,9 +84,10 @@ const Header = ({ activeTab, onTabChange }) => {
                         gap: '0.5rem',
                         padding: '0.5rem 1rem',
                         borderRadius: '6px',
-                        background: activeTab === 'merge' ? 'var(--bg-primary)' : 'transparent',
-                        color: activeTab === 'merge' ? 'var(--accent-primary)' : 'var(--text-secondary)',
-                        fontWeight: activeTab === 'merge' ? 600 : 400
+                        background: activeTab === 'merge' ? '#ffffff' : 'transparent',
+                        color: activeTab === 'merge' ? '#dc2626' : '#475569',
+                        fontWeight: activeTab === 'merge' ? 700 : 500,
+                        boxShadow: activeTab === 'merge' ? '0 1px 3px rgba(0, 0, 0, 0.1)' : 'none'
                     }}
                 >
                     <Layers size={18} />

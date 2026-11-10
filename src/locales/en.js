@@ -1,6 +1,7 @@
 export const en = {
     app: {
         title: 'Secure PDF Split & Merge',
+        version: 'v1.1',
     },
     nav: {
         split: 'Split',
@@ -8,9 +9,23 @@ export const en = {
     },
     merge: {
         error: 'Failed to merge',
-        add_files: 'Add PDF files to merge',
+        add_files: 'Add PDF files to merge & edit',
         file_list: 'File List',
+        page_list: 'Page List',
+        page_count: 'Total {count} pages',
+        hint: 'Drag & drop to reorder pages, use buttons to rotate/delete, or click a thumbnail to preview.',
         execute: 'Merge PDF',
+        rotate_left: 'Rotate Left 90°',
+        rotate_right: 'Rotate Right 90°',
+        delete_page: 'Delete this page',
+        preview_page: 'Zoom Preview',
+        clear_all: 'Clear All',
+        remove_file_pages: 'Remove all pages of this file',
+        loading_pages: 'Loading PDF pages...',
+        modal_page_info: 'Merged #{index} / {total} (Source: {fileName} - P.{originalPage})',
+        close: 'Close',
+        prev_page: 'Previous Page',
+        next_page: 'Next Page',
     },
     split: {
         extract_error: 'Failed to extract',

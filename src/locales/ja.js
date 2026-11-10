@@ -1,6 +1,7 @@
 export const ja = {
     app: {
         title: 'Secure PDF Split & Merge',
+        version: 'v1.1',
     },
     nav: {
         split: '分割 (Split)',
@@ -8,9 +9,23 @@ export const ja = {
     },
     merge: {
         error: '結合に失敗しました',
-        add_files: '結合するPDFファイルを追加',
+        add_files: '結合・編集するPDFファイルを追加',
         file_list: 'ファイルリスト',
+        page_list: 'ページ一覧',
+        page_count: '全 {count} ページ',
+        hint: 'ドラッグ＆ドロップでページの入れ替え、ボタンで回転・削除、サムネイルクリックで拡大プレビューができます。',
         execute: '結合を実行',
+        rotate_left: '左に90°回転',
+        rotate_right: '右に90°回転',
+        delete_page: 'このページを削除',
+        preview_page: '拡大プレビュー',
+        clear_all: 'すべてクリア',
+        remove_file_pages: 'このファイルの全ページを削除',
+        loading_pages: 'PDFページを展開中...',
+        modal_page_info: '結合後 #{index} / 全 {total} ページ （元: {fileName} - P.{originalPage}）',
+        close: '閉じる',
+        prev_page: '前のページ',
+        next_page: '次のページ',
     },
     split: {
         extract_error: '抽出に失敗しました',
